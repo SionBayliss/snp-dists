@@ -21,7 +21,7 @@ int distance(const char* restrict a, const char* restrict b, const int L)
 {
   int diff=0;
   for (int i=0; i < L; i++) {
-    if (a[i] != b[i] && a[i] != IGNORE_CHAR && b[i] != IGNORE_CHAR) {
+    if (a[i] == b[i] && a[i] != IGNORE_CHAR && b[i] != IGNORE_CHAR) {
       diff++;
     }
   }
